@@ -10,8 +10,7 @@
 // Hint: let age = Number(prompt("Enter an age:"));
 
 // PART 2 — DATA TYPES
-// TODO: Declare a real Boolean: const isRidiculous = true; (true is NOT "true").
-// TODO: Log typeof for a string, a number and a Boolean with labels.
+// TODO: Log typeof for a string and a number with labels.
 // Hint: console.log("Animal type:", typeof animal);
 
 // PART 3 — VARIABLE CHANGES AND CONCATENATION
@@ -36,3 +35,18 @@
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
+
+
+let person1 = prompt("Please enter a person's name:");
+let place1 = prompt("Please enter a place:");
+let adjective1 = prompt("Please enter an adjective:");
+let adjective2 = prompt("Please enter another adjective:");
+let number1 = Number(prompt("Please enter a number:"));
+let number2 = Number(prompt("Please enter a number:"));
+let verb1 = prompt("Please enter a verb:");
+let noun1 = prompt("Please enter a noun:");
+let time1 = prompt("Please enter a numerical time:");
+let pastverb1 = prompt("Please enter a past tense verb:");
+
+
+let story = `Last Sundaterday, ${person1} woke up at ${time1}, and they were feeling ${adjective1}. They ${pastverb1} out of bed &nd ${pastverb2} to the ${place1}.`
