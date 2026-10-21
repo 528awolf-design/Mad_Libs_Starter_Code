@@ -9,10 +9,6 @@
 // Hint: let animal = prompt("Enter an animal:");
 // Hint: let age = Number(prompt("Enter an age:"));
 
-// PART 2 — DATA TYPES
-// TODO: Log typeof for a string and a number with labels.
-// Hint: console.log("Animal type:", typeof animal);
-
 // PART 3 — VARIABLE CHANGES AND CONCATENATION
 // TODO: Reassign one let variable after its first value (use the updated value).
 // TODO: Combine a quoted string and a variable with +; show the result.
@@ -41,12 +37,21 @@ let person1 = prompt("Please enter a person's name:");
 let place1 = prompt("Please enter a place:");
 let adjective1 = prompt("Please enter an adjective:");
 let adjective2 = prompt("Please enter another adjective:");
-let number1 = Number(prompt("Please enter a number:"));
-let number2 = Number(prompt("Please enter a number:"));
 let verb1 = prompt("Please enter a verb:");
 let noun1 = prompt("Please enter a noun:");
 let time1 = prompt("Please enter a numerical time:");
 let pastverb1 = prompt("Please enter a past tense verb:");
+let pastverb2 = prompt("Please enter a past tense verb:");
+let job1 = prompt("Please enter a job:");
+let ingverb1 = prompt("Please enter an -ing verb");
+let age = Number(prompt("Please enter an age:"));
+let bumber = Number(prompt("Please enter a number:"));
+let number2 = Number(prompt("Please enter a number:"));
+const dogAge = age / 4;
+let whatHappened = dogAge * 9;
+let increasedAge = whatHappened + bumber;
+let decreasedAge = increasedAge % 10;
 
 
-let story = `Last Sundaterday, ${person1} woke up at ${time1}, and they were feeling ${adjective1}. They ${pastverb1} out of bed &nd ${pastverb2} to the ${place1}.`
+let story = `Last Sundaterday, ${person1} woke up at ${time1}, and they were feeling ${adjective1}. They ${pastverb1} out of bed &nd ${pastverb2} to the ${place1}. On the way there, they ran into a ${job1} who saw them ${ingverb1} his dog. The dog was ${dogAge} years old, but after what happened, it is now ${whatHappened} years old. To save the dog, ${person1} and the ${job1} used an experimental ${noun1}. The ${noun1} took ${bumber} years to work, so the dog is now ${increasedAge} years old. After extensive physical therapy, the dog's age went from ${increasedAge} to ${decreasedAge}.`
+document.getElementById("madlib-output").innerHTML = story;
